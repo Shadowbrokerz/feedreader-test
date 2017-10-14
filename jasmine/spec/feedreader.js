@@ -76,7 +76,7 @@ $(function () {
         it('make sure there is at least 1 entry within the feed container', function (done) {
             expect($('.feed .entry').length).toBeGreaterThan(0);
             done();
-        })
+        });
 
         it("entry has a valid link", function (done) {
             let entries = $('.feed .entry-link');
