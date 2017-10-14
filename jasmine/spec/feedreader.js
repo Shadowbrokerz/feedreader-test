@@ -47,16 +47,16 @@ $(function () {
 
         /* ensures the menu element is hidden by default. */
         it('should check if the menu element is hidden by default', function () {
-            expect($(body).attr('class')).toBe('menu-hidden');
+            expect($(body).hasClass('menu-hidden')).toBe(true);
         });
 
         /* ensures the menu changes visibility when the menu icon is clicked.*/
         it('ensures the menu changes visibility when clicked', function () {
             menuButton.click();
-            expect($(body).attr('class')).not.toContain('menu-hidden');
+            expect($(body).hasClass('menu-hidden')).toBe(false);
 
             menuButton.click();
-            expect($(body).attr('class')).toContain('menu-hidden');
+            expect($(body).hasClass('menu-hidden')).toBe(true);
         });
     });
 
@@ -73,17 +73,15 @@ $(function () {
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
          */
-        it('make sure there is at least 1 entry within the feed container', function (done) {
+        it('make sure there is at least 1 entry within the feed container', function () {
             expect($('.feed .entry').length).toBeGreaterThan(0);
-            done();
         });
 
-        it("entry has a valid link", function (done) {
+        it("entry has a valid link", function () {
             let entries = $('.feed .entry-link');
             entries.each(function (i) {
                 expect(entries[i].href).toMatch(/^(http|https):\/\//);
             });
-            done();
         });
 
         describe('New Feed Selection', function () {
@@ -102,10 +100,9 @@ $(function () {
             /*
             *checks the loadFeed function that the content actually changes.
             */
-            it("it changes feed content", function (done) {
+            it("it changes feed content", function () {
                 let newFeedcontent = $('.feed').html();
                 expect(initialFeedContent).not.toBe(newFeedcontent);
-                done();
             });
         });
     });
