@@ -10,7 +10,7 @@ This app consist on testing a feeds reader under the testing JS framework "Jasmi
 2. Open the index.html in your browser
 3. You should now see the test results at the bottom.
 
-##OR
+## OR
 
 ### 2 - Online Hosted Test
  1. Go to [shadowbrokerz.github.io/feedreader-test](shadowbrokerz.github.io/feedreader-test/)
