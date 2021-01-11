@@ -6,14 +6,14 @@ This app consist on testing a feeds reader under the testing JS framework "Jasmi
 ### 1 - Cloning the repo
 1.  In your terminal run the following:
 
-        git clone https://github.com/Shadowbrokerz/feedreader-test.git
+        git clone https://github.com/acicco/feedreader-test.git
 2. Open the index.html in your browser
 3. You should now see the test results at the bottom.
 
 ## OR
 
 ### 2 - Online Hosted Test
- 1. Go to [shadowbrokerz.github.io/feedreader-test](https://shadowbrokerz.github.io/feedreader-test/)
+ 1. Go to [acicco.github.io/feedreader-test](https://shadowbrokerz.github.io/feedreader-test/)
  2. You should now see the test results at the bottom.
 
 
