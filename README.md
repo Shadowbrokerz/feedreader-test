@@ -13,7 +13,7 @@ This app consist on testing a feeds reader under the testing JS framework "Jasmi
 ## OR
 
 ### 2 - Online Hosted Test
- 1. Go to [acicco.github.io/feedreader-test](https://shadowbrokerz.github.io/feedreader-test/)
+ 1. Go to [acicco.github.io/feedreader-test](https://acicco.github.io/feedreader-test/)
  2. You should now see the test results at the bottom.
 
 
